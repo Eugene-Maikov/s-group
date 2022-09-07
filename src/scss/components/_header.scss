@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+
+  &__inner {
+    position: absolute;
+    @include flex-all-cb;
+  }
+
+  &__icons {
+    @include flex-all-center;
+    img{
+      @include mr(40);
+    }
+  }
+}
+
+.nav {
+  &__list {
+    @include flex;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: var(--light-color);
+  }
+}

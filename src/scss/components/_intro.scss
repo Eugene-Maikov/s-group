@@ -1,0 +1,18 @@
+.intro {
+  height: 100vh;
+  background-color: var(--primary-color);
+  // background-image: url('../img/intro-bg.jpg');
+  @include bg-cover;
+
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+  }
+
+  &__suptitle {
+    margin: 0;
+    padding: 0;
+  }
+}

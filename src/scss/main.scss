@@ -4,6 +4,8 @@
 @import "fonts";
 @import "settings";
 
+@import "./components/transition-line.scss";
+
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/intro";

@@ -1,0 +1,108 @@
+.catalog {
+  &__inner {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &__item {
+    margin-bottom: 70px;
+    grid-gap: 30px;
+  }
+
+  &__info {
+    position: relative;
+  }
+
+  &__text {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    display: inline-block;
+    width: 140px;
+    height: 53px;
+    position: absolute;
+    top: 117px;
+    left: 20px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 5px;
+      background-color: var(--secondary-color);
+      bottom: -27px;
+      left: 55px;
+    }
+  }
+}
+
+
+
+
+
+
+.hexagon__cover {
+  position: absolute;
+  left: 15px;
+  top: -40px;
+
+  --uihexagonClipPath: var(--hexagonClipPath);
+  box-sizing: var(--hexagonBoxSizing, border-box);
+  display: var(--hexagonDisplay, inline-flex);
+  padding: var(--hexagonStrokeThickness, 7px);
+  clip-path: var(--uihexagonClipPath);
+  background-color: var(--hexagonStrokeColor, currentColor);
+  --hexagonStrokeColor: var(--secondary-color);
+  /* Цвет рамки */
+  --hexagonStrokeThickness: 5px;
+  /* Ширина рамки */
+}
+
+.hexagon {
+  --uihexagonClipPath: var(--hexagonClipPath);
+  box-sizing: var(--hexagonBoxSizing, border-box);
+  display: var(--hexagonDisplay, inline-flex);
+  padding: var(--hexagonStrokeThickness, 3px);
+  clip-path: var(--uihexagonClipPath);
+  background-color: var(--hexagonStrokeColor, currentColor);
+  --hexagonStrokeColor: var(--light-color);
+  /* Цвет рамки */
+  --hexagonStrokeThickness: 5px;
+  /* Ширина рамки */
+
+
+}
+
+.hexagon-img {
+  max-width: 140px;
+  display: block;
+  clip-path: var(--uihexagonClipPath);
+  position: relative;
+}
+
+
+.hexagon-border {
+  --hexagonClipPath: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.mask__sale {
+  position: absolute;
+  width: 87px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transform: translate(36px, 73px);
+}
+
+.catalog__button{
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,92 @@
+.benefits {
+  background-color: var(--primary-color);
+
+  &__inner {
+    margin-top: 256px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+    position: relative;
+    grid-gap: 30px;
+  }
+
+  &__info {
+    background-color: var(--secondary-color);
+    max-width: 260px;
+    padding-top: 88px;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--light-color);
+  }
+
+  &__number {
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    background-color: var(--light-color);
+    width: 100%;
+    height: 62px;
+    @include flex-all-center;
+  }
+}
+
+.hexagonBen__cover {
+  --uihexagonBenClipPath: var(--hexagonBenClipPath);
+  box-sizing: var(--hexagonBenBoxSizing, border-box);
+  display: var(--hexagonBenDisplay, inline-flex);
+  padding: var(--hexagonBenStrokeThickness, 20px);
+  clip-path: var(--uihexagonBenClipPath);
+  background-color: var(--hexagonBenStrokeColor, currentColor);
+  --hexagonBenStrokeColor: #5695CB;
+  /* Цвет рамки */
+  --hexagonBenStrokeThickness: 20px;
+  /* Ширина рамки */
+}
+
+.hexagonBen {
+  position: absolute;
+  top: -215px;
+
+  --uihexagonBenClipPath: var(--hexagonBenClipPath);
+  box-sizing: var(--hexagonBenBoxSizing, border-box);
+  display: var(--hexagonBenDisplay, inline-flex);
+  padding: var(--hexagonBenStrokeThickness, 3px);
+  clip-path: var(--uihexagonBenClipPath);
+  background-color: var(--hexagonBenStrokeColor, currentColor);
+  --hexagonBenStrokeColor: var(--light-color);
+  /* Цвет рамки */
+  --hexagonBenStrokeThickness: 5px;
+  /* Ширина рамки */
+
+
+}
+
+.hexagonBen-img {
+  max-width: 250px;
+  display: block;
+  clip-path: var(--uihexagonBenClipPath);
+  position: relative;
+}
+
+
+.hexagonBen-border {
+  --hexagonBenClipPath: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}

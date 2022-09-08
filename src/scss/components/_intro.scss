@@ -8,7 +8,10 @@
   &__inner {
     color: var(--light-color);
     letter-spacing: 0.02em;
-    padding-top: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   &__suptitle {

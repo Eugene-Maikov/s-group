@@ -1,0 +1,74 @@
+// ============ Slider ==========
+.partners {
+  &__container {
+    position: relative;
+  }
+  &__item{
+    @include flex-all-center;
+  }
+  &__img {
+    max-height: 100px;
+  }
+  &__slider-wpapper{
+    align-items: center;
+  }
+
+  &__btn-prev {
+    background-image: url("../img/btn-prev-blue.svg");
+    @include bg-cover;
+    position: absolute;
+    left: -70px;
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__btn-next {
+    background-image: url("../img/btn-next-blue.svg");
+    @include bg-cover;
+    position: absolute;
+    right: -70px;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__btn {
+    background-color: var(--light-color);
+  }
+}
+
+.intro__more--secondary {
+  padding-bottom: 28px;
+  margin-left: 30px;
+  color: var(--secondary-color);
+
+  &::after {
+    background-image: url('../img/arrow-more-blue.svg');
+  }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -50px;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+  background: #27364B;
+  opacity: 0.2;
+
+  &-active {
+    background: #27364B;
+    opacity: 1;
+  }
+}

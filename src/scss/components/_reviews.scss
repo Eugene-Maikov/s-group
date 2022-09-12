@@ -1,0 +1,127 @@
+.reviews {
+  background-color: var(--primary-color);
+
+  &__item {
+    padding: 50px 30px 48px 30px;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 0 0 100px;
+
+    .image {
+      width: 70px;
+      height: 70px;
+      border: 8px solid #eef4fa;
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--brown-color);
+
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    span {
+      margin: 0;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  &__content {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--brown-color);
+    margin-bottom: 19px;
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__quotation {
+    display: flex;
+    flex: 0 0 100px;
+    align-items: flex-start;
+    justify-content: center;
+    transform: translate(-10px, 0);
+  }
+}
+
+.intro__more--brown {
+  color: var(--brown-color);
+  margin-left: 0;
+
+  &::after {
+    background-image: url('../img/arrow-more-brown.svg');
+  }
+}
+
+// ============ Slider ==========
+.reviews {
+  &__container {
+    position: relative;
+  }
+
+  &__item {
+    background-color: var(--light-color);
+  }
+
+  &__btn-prev {
+    background-image: url("../img/btn-prev-blue.svg");
+    @include bg-cover;
+    position: absolute;
+    left: -70px;
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__btn-next {
+    background-image: url("../img/btn-next-blue.svg");
+    @include bg-cover;
+    position: absolute;
+    right: -70px;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__btn {
+    background-color: var(--light-color);
+  }
+}
+
+
+
+.reviews-pagination {
+  .swiper-pagination-bullet {
+    background-color: var(--secondary-color);
+  }
+}

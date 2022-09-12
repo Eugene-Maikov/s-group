@@ -42,12 +42,11 @@
 
   &__item {
     background-color: var(--light-color);
-
-
   }
-
-  &__content {
-    padding: 20px;
+  &__img {
+    .image {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -58,7 +57,7 @@
   }
 
   &__text {
-    margin: 0;
+    margin: 23px 30px 19px 30px;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -100,5 +99,34 @@
 }
 
 .intro__more--secondary{
+  padding-bottom: 28px;
+  margin-left: 30px;
   color: var(--secondary-color);
+  &::after {
+    background-image: url('../img/arrow-more-blue.svg');
+  }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+  background: #27364B;
+  opacity: 0.2;
+
+
+  &-active {
+    background: #27364B;
+    opacity: 1;
+  }
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
 }

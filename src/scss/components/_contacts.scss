@@ -1,0 +1,137 @@
+.contacts {
+  background-image: url('../img/map-img.jpg');
+  @include bg-cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    cursor: pointer;
+  }
+
+  &__top {
+    background-color: #F8F9FA;
+    opacity: 0.9;
+    width: 428px;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__bottom {
+    background-color: var(--light-color);
+    opacity: 0.9;
+    width: 428px;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__top-content {
+    position: absolute;
+    top: 22px;
+    left: 50px;
+  }
+
+  &__bottom-content {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brown-color);
+    opacity: 0.5;
+    margin-bottom: 7px;
+  }
+
+  &__characteristic {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: var(--brown-color);
+    opacity: 0.5;
+  }
+
+
+  &__address,
+  &__phone,
+  &__email {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 20px;
+  }
+
+  .address__icon,
+  .phone__icon,
+  .email__icon {
+    width: 30px;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--brown-color);
+    opacity: 0.5;
+  }
+
+  &__suptext {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--brown-color);
+    opacity: 0.5;
+  }
+}
+
+.active {
+  .contacts__item{
+    filter: drop-shadow(0px 5px 35px rgba(0, 0, 0, 0.1));
+  }
+  .contacts__top {
+    background-color: var(--secondary-color);
+    opacity: 1;
+  }
+
+  .contacts__bottom {
+    opacity: 1;
+  }
+  .contacts__title,
+  .contacts__characteristic {
+    color: var(--light-color);
+    opacity: 1;
+  }
+  .contacts__text,
+  .contacts__suptext {
+    opacity: 1;
+  }
+
+}

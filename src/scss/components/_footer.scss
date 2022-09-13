@@ -1,0 +1,63 @@
+.footer {
+  &__top {
+    padding-top: 92px;
+    padding-bottom: 22px;
+    background-color: var(--primary-color);
+  }
+
+  &__bottom {
+    background-color: var(--dark-color);
+
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      text-align: right;
+      letter-spacing: 0.02em;
+      color: var(--light-color);
+      opacity: 0.5;
+    }
+  }
+
+  &__bottom-inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    ul {
+      li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--light-color);
+    opacity: 0.5;
+  }
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+  opacity: 0.5;
+}
+
+.polits__item {
+  margin-left: 50px;
+}

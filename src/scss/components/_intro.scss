@@ -14,6 +14,12 @@
     justify-content: flex-start;
   }
 
+  &__title {
+    @media (max-width: (768px)) {
+      width: 415px;
+    }
+  }
+
   &__suptitle {
     margin: 0;
     padding: 0;
@@ -23,26 +29,29 @@
     display: inline-block;
     width: 630px;
     margin-bottom: 30px;
-    }
-
-    &__info {
-      background-image: url('../img/intro-text-bg.png');
-      @include bg-cover;
-      width: 720px;
-      height: 232px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__text {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 150%;
-      width: 590px;
-      margin-top: 23px;
-      margin-left: 40px;
+@media (max-width: (768px)) {
+  font-style: 32px;
+}
   }
-  &__more{
+
+  &__info {
+    background-image: url('../img/intro-text-bg.png');
+    @include bg-cover;
+    width: 720px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    width: 590px;
+    margin-top: 23px;
+    margin-left: 40px;
+  }
+&__more {
     width: 150px;
     display: block;
     font-weight: 700;
@@ -52,7 +61,7 @@
     color: var(--light-color);
     margin-left: 40px;
     position: relative;
-    &::after{
+&::after {
       content: '';
       position: absolute;
       top: 3px;
@@ -61,8 +70,5 @@
       height: 20px;
       background-image: url('../img/arrow-more.svg');
     }
-
   }
 }
-
-

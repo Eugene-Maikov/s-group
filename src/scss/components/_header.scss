@@ -5,7 +5,8 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  &::after{
+
+  &::after {
     content: '';
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     opacity: 0.5;
@@ -21,20 +22,33 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+  }
+
+  &__logo {
+    @media (max-width: (768px)) {
+      width: 115px;
+      height: 40px;
     }
+  }
 
-    &__location {
-      margin-bottom: 16px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 140%;
-      letter-spacing: 0.02em;
-      color: var(--light-color);
-      display: inline-block;
-      position: relative;
+  &__center {
+    @media (max-width: (768px)) {
+      display: none;
+    }
+  }
 
-      &::after {
-        content: '';
+  &__location {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: var(--light-color);
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: '';
       position: absolute;
       right: -25px;
       top: 6px;
@@ -42,12 +56,29 @@
       height: 9.5px;
       background-image: url('../img/down-arrow.svg');
       @include bg-cover;
-      }
+    }
   }
+
   &__icons {
     @include flex-all-center;
+
     .header__icon {
       @include mr(40px);
+
+      @media (max-width: (768px)) {
+        width: 20px;
+        height: 20px;
+        @include mr(20px);
+      }
+    }
+
+    .burger {
+      @media (max-width: (768px)) {
+        display: flex;
+        align-items: center;
+        width: 30px;
+        height: 20px;
+      }
     }
   }
 }
@@ -62,6 +93,7 @@
   &__item {
     @include mr(40px);
   }
+
   &__link {
     font-size: 18px;
     line-height: 140%;

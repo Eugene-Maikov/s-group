@@ -15,20 +15,20 @@ const swiperNews = new Swiper(".news__slider", {
     el: '.news-pagination',
   },
 
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 10,
-  //   },
-  //   400: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 10,
-  //   },
-  //   768: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 10,
-  //   },
-  // },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    770: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
 });
 const swiperPartners = new Swiper(".partners__slider", {
   slidesPerView: 6,
@@ -39,20 +39,14 @@ const swiperPartners = new Swiper(".partners__slider", {
     prevEl: ".partners__btn-prev",
   },
 
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 10,
-  //   },
-  //   400: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 10,
-  //   },
-  //   768: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 10,
-  //   },
-  // },
+  breakpoints: {
+    400: {
+      slidesPerView: 5,
+    },
+    770: {
+      slidesPerView: 6,
+    },
+  },
 });
 const swiperReviews = new Swiper(".reviews__slider", {
   slidesPerView: 2,

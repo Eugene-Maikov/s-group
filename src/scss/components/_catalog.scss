@@ -3,11 +3,21 @@
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+
+    @media (max-width: (768px)) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__item {
     margin-bottom: 70px;
     grid-gap: 30px;
+
+    @media (max-width: (768px)) {
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 50px;
+    }
   }
 
   &__info {
@@ -38,7 +48,21 @@
       background-color: var(--secondary-color);
       bottom: -27px;
       left: 50px;
+
+      @media (max-width: (768px)) {
+        height: 2px;
+      }
     }
+
+    @media (max-width: (768px)) {
+      font-size: 16px;
+      left: 12px;
+      height: 27px;
+    }
+  }
+
+  @media (max-width: (768px)) {
+    padding-top: 150px;
   }
 }
 
@@ -61,7 +85,13 @@
   --hexagonStrokeColor: var(--secondary-color);
   /* Цвет рамки */
   --hexagonStrokeThickness: 5px;
+
   /* Ширина рамки */
+  @media (max-width: (768px)) {
+    left: 22px;
+    top: -30px;
+  }
+
 }
 
 .hexagon {
@@ -84,6 +114,14 @@
   display: block;
   clip-path: var(--uihexagonClipPath);
   position: relative;
+
+  @media (max-width: (768px)) {
+    width: 100px;
+  }
+}
+
+.hexagon-primary-img {
+  width: 190px;
 }
 
 
@@ -102,7 +140,11 @@
   transform: translate(36px, 73px);
 }
 
-.catalog__button{
+.catalog__button {
   display: flex;
   justify-content: center;
+
+  @media (max-width: (768px)) {
+    margin-top: -20px;
+  }
 }

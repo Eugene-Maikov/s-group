@@ -3,7 +3,7 @@
   height: 100vh;
   position: relative;
   background-color: var(--primary-color);
-  background-image: url('../img/intro-bg.jpg');
+  background-image: url("../img/intro-bg.jpg");
   @include bg-cover;
   &__inner {
     color: var(--light-color);
@@ -29,18 +29,54 @@
     display: inline-block;
     width: 630px;
     margin-bottom: 30px;
-@media (max-width: (768px)) {
-  font-style: 32px;
-}
+    @media (max-width: (768px)) {
+      font-size: 32px;
+      }
   }
 
   &__info {
-    background-image: url('../img/intro-text-bg.png');
+    background-image: url("../img/intro-text-bg.png");
     @include bg-cover;
     width: 720px;
     height: 232px;
     display: flex;
     flex-direction: column;
+    @media (max-width: (768px)) {
+      background-image: none;
+      background-color: var(--primary-color);
+      width: 90%;
+      height: auto;
+      padding: 23px 30px 28px 30px;
+      border-bottom: 10px solid var(--secondary-color);
+      position: absolute;
+      bottom: -90px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        width: 55%;
+        height: 20px;
+        background-color: var(--gray-color);
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: -20px;
+        right: 0;
+        width: 55%;
+        height: 10px;
+        background-color: var(--primary-color);
+        clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
   }
 
   &__text {
@@ -50,8 +86,14 @@
     width: 590px;
     margin-top: 23px;
     margin-left: 40px;
+    @media (max-width: (768px)) {
+      margin: 0;
+      width: 100%;
+      font-size: 11px;
+      margin-bottom: 18px;
+    }
   }
-&__more {
+  &__more {
     width: 150px;
     display: block;
     font-weight: 700;
@@ -61,14 +103,29 @@
     color: var(--light-color);
     margin-left: 40px;
     position: relative;
-&::after {
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       top: 3px;
       left: 115px;
       width: 30px;
       height: 20px;
-      background-image: url('../img/arrow-more.svg');
+      background-image: url("../img/arrow-more.svg");
+      }
+
+      @media (max-width: (768px)) {
+        margin: 0;
+        font-size: 12px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 82px;
+          width: 18.35px;
+          height: 12px;
+          background-image: url("../img/arrow-more-min.svg");
+        }
     }
   }
 }

@@ -40,8 +40,14 @@ const swiperPartners = new Swiper(".partners__slider", {
   },
 
   breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
     400: {
-      slidesPerView: 5,
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 4,
     },
     770: {
       slidesPerView: 6,
@@ -61,18 +67,14 @@ const swiperReviews = new Swiper(".reviews__slider", {
     el: '.reviews-pagination',
   },
 
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 10,
-  //   },
-  //   400: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 10,
-  //   },
-  //   768: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 10,
-  //   },
-  // },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+  },
 });

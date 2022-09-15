@@ -1,15 +1,24 @@
+.contactsMain-title{
+  display: none;
+
+  @media (max-width: (700px)) {
+    display: block;
+  }
+}
 .contacts {
   background-image: url('../img/map-img.jpg');
   @include bg-cover;
   height: 100vh;
   display: flex;
   align-items: flex-end;
+  padding-bottom: 30px;
 
   &__inner {
     display: flex;
     justify-content: space-between;
   }
-  &__item{
+
+  &__item {
     cursor: pointer;
   }
 
@@ -22,6 +31,11 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+
+    @media (max-width: (768px)) {
+      width: 232px;
+      height: 64px;
+    }
   }
 
   &__bottom {
@@ -33,12 +47,22 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+
+    @media (max-width: (768px)) {
+      width: 232px;
+      height: 162px;
+    }
   }
 
   &__top-content {
     position: absolute;
     top: 22px;
     left: 50px;
+
+    @media (max-width: (768px)) {
+      top: 15px;
+      left: 20px;
+    }
   }
 
   &__bottom-content {
@@ -49,6 +73,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: (768px)) {
+      top: 15px;
+      left: 20px;
+      height: 128px;
+    }
   }
 
   &__title {
@@ -61,6 +91,11 @@
     color: var(--brown-color);
     opacity: 0.5;
     margin-bottom: 7px;
+
+    @media (max-width: (768px)) {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
   }
 
   &__characteristic {
@@ -70,6 +105,10 @@
     letter-spacing: 0.02em;
     color: var(--brown-color);
     opacity: 0.5;
+
+    @media (max-width: (768px)) {
+      font-size: 10px;
+    }
   }
 
 
@@ -87,7 +126,7 @@
   .address__icon,
   .phone__icon,
   .email__icon {
-    width: 30px;
+    width: 20px;
     text-align: center;
   }
 
@@ -99,6 +138,10 @@
     letter-spacing: 0.02em;
     color: var(--brown-color);
     opacity: 0.5;
+
+    @media (max-width: (768px)) {
+      font-size: 12px;
+    }
   }
 
   &__suptext {
@@ -109,13 +152,18 @@
     letter-spacing: 0.02em;
     color: var(--brown-color);
     opacity: 0.5;
+
+    @media (max-width: (768px)) {
+      font-size: 10px;
+    }
   }
 }
 
 .active {
-  .contacts__item{
+  .contacts__item {
     filter: drop-shadow(0px 5px 35px rgba(0, 0, 0, 0.1));
   }
+
   .contacts__top {
     background-color: var(--secondary-color);
     opacity: 1;
@@ -124,11 +172,13 @@
   .contacts__bottom {
     opacity: 1;
   }
+
   .contacts__title,
   .contacts__characteristic {
     color: var(--light-color);
     opacity: 1;
   }
+
   .contacts__text,
   .contacts__suptext {
     opacity: 1;

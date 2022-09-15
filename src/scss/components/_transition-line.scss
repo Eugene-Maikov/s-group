@@ -57,6 +57,9 @@
   @media (max-width: (768px)) {
     height: 20px;
   }
+  @media (max-width: (400px)) {
+    height: 10px;
+  }
 }
 
 .line-primary {
@@ -77,6 +80,10 @@
     left: -30px;
     top: 10px;
   }
+  @media (max-width: (400px)) {
+    height: 5px;
+    top: 5px;
+  }
 }
 
 .line-secondary {
@@ -96,6 +103,10 @@
     right: -13px;
     top: 20px;
   }
+  @media (max-width: (400px)) {
+    height: 5px;
+    top: 10px;
+  }
 }
 
 // =======================================
@@ -110,6 +121,9 @@
     display: flex;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 
@@ -127,6 +141,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-secondary-half-1 {
@@ -140,6 +157,9 @@
     right: 0;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 
@@ -159,6 +179,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-secondary-half-2 {
@@ -172,6 +195,9 @@
     right: 0;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 
@@ -188,6 +214,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-gray-half-3 {
@@ -202,9 +231,11 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 }
-
 
 .line__border-3 {
 
@@ -216,6 +247,9 @@
     display: flex;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 
@@ -231,6 +265,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-primary-half-1 {
@@ -244,6 +281,9 @@
     right: 0;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 
@@ -263,6 +303,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-primary-half-2 {
@@ -276,6 +319,9 @@
     right: 0;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 
@@ -294,6 +340,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-gray-half-3 {
@@ -307,6 +356,9 @@
     right: 0;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 }
@@ -322,6 +374,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-primary-half-1 {
@@ -336,6 +391,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-secondary-half-1 {
@@ -349,6 +407,9 @@
     right: 0;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 
@@ -369,6 +430,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-secondary-half-2 {
@@ -382,6 +446,9 @@
     right: 0;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 
@@ -402,6 +469,9 @@
     @media (max-width: (768px)) {
       height: 10px;
     }
+    @media (max-width: (400px)) {
+      height: 5px;
+    }
   }
 
   .line-gray-half-3 {
@@ -415,6 +485,9 @@
     right: 0;
     @media (max-width: (768px)) {
       height: 10px;
+    }
+    @media (max-width: (400px)) {
+      height: 5px;
     }
   }
 }

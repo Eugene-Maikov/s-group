@@ -20,6 +20,7 @@ html {
   min-height: 100%;
   font-size: 16px;
 }
+
 img {
   height: auto;
   max-width: 100%;
@@ -35,7 +36,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -109,6 +111,7 @@ a {
 .section-offset {
   padding-top: 80px;
   padding-bottom: 100px;
+
   @media (max-width: (768px)) {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -129,18 +132,36 @@ a {
     font-size: 34px;
     padding-bottom: 20px;
   }
+  @media (max-width: (720px)) {
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
 }
 
 .title--light {
   color: var(--light-color);
 }
-.title--form{
+
+.title--form {
   text-align: center;
   padding-bottom: 20px;
+
+  @media (max-width: (768px)) {
+    padding-bottom: 10px;
+  }
+  @media (max-width: (400px)) {
+    margin: 0 -10px;
+    font-size: 18px;
+  }
 }
-.title--min{
+
+.title--min {
   font-size: 24px;
   opacity: 0.5;
+
+  @media (max-width: (768px)) {
+    font-size: 14px;
+  }
 }
 
 .btn {
@@ -162,4 +183,3 @@ a {
     font-size: 12px;
   }
 }
-

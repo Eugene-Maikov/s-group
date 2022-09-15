@@ -4,6 +4,16 @@
     width: 100%;
     border: 30px solid var(--secondary-color);
     padding: 40px;
+
+    @media (max-width: (768px)) {
+      border: 10px solid var(--secondary-color);
+    }
+    @media (max-width: (700px)) {
+      padding: 20px;
+    }
+    @media (max-width: (400px)) {
+      padding: 20px 10px;
+    }
   }
 
   &__suptitle {
@@ -15,6 +25,14 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--light-color);
+
+    @media (max-width: (768px)) {
+      font-size: 14px;
+    }
+    @media (max-width: (400px)) {
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -22,12 +40,54 @@
   &__inner {
     @include flex-all-center;
     margin-bottom: 50px;
+
+    @media (max-width: (768px)) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: (700px)) {
+      flex-direction: column;
+    }
+    @media (max-width: (400px)) {
+      margin: 0 10px;
+    }
+  }
+
+  &__row {
+    display: flex;
+
+    @media (max-width: (768px)) {
+      flex-direction: column;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+    }
+    @media (max-width: (700px)) {
+      margin-right: 0;
+    }
   }
 
   &__group {
     margin-right: 30px;
-    &:last-child{
+
+    @media (max-width: (768px)) {
+      margin-bottom: 20px;
       margin-right: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+    @media (max-width: (700px)) {
+      margin-right: 0;
+      &:last-child {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -54,12 +114,32 @@
       letter-spacing: 0.02em;
       color: var(--light-color);
     }
+
+    @media (max-width: (768px)) {
+      height: 40px;
+      width: 300px;
+    }
+    @media (max-width: (400px)) {
+      width: 100%;
+    }
+
   }
 
   .btn__questions {
     width: 260px;
     height: 60px;
     @include flex-all-center;
+
+    @media (max-width: (768px)) {
+      height: 40px;
+      width: 300px;
+    }
+    @media (max-width: (400px)) {
+      width: 100%;
+    }
+    @media (max-width: (400px)) {
+      font-size: 11px;
+    }
   }
 }
 
@@ -67,9 +147,16 @@
 
 // ========== checkbox ==========
 
-.checkbox__group{
+.checkbox__group {
   text-align: center;
+  @media (max-width: (700px)) {
+    text-align: left;
+  }
+  @media (max-width: (400px)) {
+    margin-left: 10px;
+  }
 }
+
 .custom-checkbox {
   position: absolute;
   z-index: -1;
@@ -86,6 +173,10 @@
   line-height: 140%;
   letter-spacing: 0.02em;
   color: var(--light-color);
+
+  @media (max-width: (768px)) {
+    font-size: 9px;
+  }
 }
 
 .custom-checkbox+label::before {
@@ -101,6 +192,12 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+
+  @media (max-width: (768px)) {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+  }
 }
 
 .custom-checkbox:checked+label::before {

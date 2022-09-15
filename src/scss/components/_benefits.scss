@@ -12,10 +12,18 @@
       grid-gap: 20px;
       padding-left: 20px;
     }
+    @media (max-width: (700px)) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 0;
+    }
   }
 
   &__item {
     position: relative;
+    @media (max-width: (700px)) {
+     display: flex;
+     justify-content: center;
+    }
   }
 
   &__info {
@@ -27,6 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     @media (max-width: (768px)) {
       max-width: 140px;
       min-height: 143px;
@@ -47,6 +56,7 @@
     letter-spacing: 0.02em;
     color: var(--light-color);
     padding: 0px 35px;
+
     @media (max-width: (768px)) {
       font-size: 12px;
       padding: 0 22px;
@@ -65,6 +75,7 @@
     width: 100%;
     height: 62px;
     @include flex-all-center;
+
     @media (max-width: (768px)) {
       font-size: 16px;
       height: 20px;
@@ -77,12 +88,16 @@
   top: -242px;
   left: -20px;
   right: 0;
-@media (max-width: (768px)) {
-  position: absolute;
-  top: -131px;
-  left: -12px;
-  right: 0;
-}
+
+  @media (max-width: (768px)) {
+    position: absolute;
+    top: -131px;
+    left: -12px;
+    right: 0;
+  }
+  @media (max-width: (700px)) {
+    width: 163px;
+  }
 }
 
 .hexagonBen__cover {
@@ -113,10 +128,10 @@
   --hexagonBenStrokeThickness: 5px;
   /* Ширина рамки */
 
-@media (max-width: (768px)) {
-  --hexagonBenStrokeThickness: 2px;
-  top: -114px;
-}
+  @media (max-width: (768px)) {
+    --hexagonBenStrokeThickness: 2px;
+    top: -114px;
+  }
 }
 
 .hexagonBen-img {
@@ -124,6 +139,7 @@
   display: block;
   clip-path: var(--uihexagonBenClipPath);
   position: relative;
+
   @media (max-width: (768px)) {
     max-width: 136px;
   }

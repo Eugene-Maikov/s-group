@@ -1,6 +1,53 @@
 .burger {
-  @include burger
+  @include burger;
+  color: var(--light-color);
 }
-.menu--active{
+
+.menu--active {
   display: flex;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
 }
+
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__item {
+    @include mr(40px);
+  }
+
+  &__link {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: var(--light-color);
+    position: relative;
+
+    &--arrow {
+      &::after {
+        content: '';
+        position: absolute;
+        right: -25px;
+        top: 6px;
+        width: 17px;
+        height: 9.5px;
+        background-image: url('../img/down-arrow.svg');
+        @include bg-cover;
+      }
+    }
+  }
+
+}
+

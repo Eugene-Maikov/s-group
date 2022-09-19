@@ -32,12 +32,6 @@
     }
   }
 
-  &__center {
-    @media (max-width: (768px)) {
-      display: none;
-    }
-  }
-
   &__location {
     margin-bottom: 16px;
     font-weight: 400;
@@ -57,6 +51,9 @@
       height: 9.5px;
       background-image: url('../img/down-arrow.svg');
       @include bg-cover;
+    }
+    @media (max-width: (768px)) {
+      display: none;
     }
   }
 
@@ -118,5 +115,9 @@
         @include bg-cover;
       }
     }
+  }
+
+  @media (max-width: (768px)) {
+    display: none;
   }
 }

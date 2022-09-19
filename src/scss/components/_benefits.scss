@@ -7,23 +7,63 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 
-    @media (max-width: (768px)) {
+    @media (max-width: (1366px)) {
       margin-top: 116px;
       grid-gap: 20px;
       padding-left: 20px;
     }
+
+    @media (max-width: (768px)) {
+      margin-top: 116px;
+      grid-gap: 20px;
+    }
+
+    @media (max-width: (760px)) {
+      grid-template-columns: repeat(3, 1fr);
+      padding-left: 0;
+    }
+
     @media (max-width: (700px)) {
       grid-template-columns: repeat(2, 1fr);
-      margin-left: 0;
     }
+
   }
 
   &__item {
     position: relative;
-    @media (max-width: (700px)) {
-     display: flex;
-     justify-content: center;
+
+    @media (max-width: (760px)) {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 100px;
+
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
     }
+
+    @media (max-width: (700px)) {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 100px;
+
+      &:nth-child(3) {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
+    @media (max-width: (700px)) {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 8 3px;
+    }
+
   }
 
   &__info {
@@ -36,11 +76,30 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media (max-width: (1366px)) {
+      max-width: 174px;
+      min-height: 210px;
+      padding-top: 95px;
+    }
+
     @media (max-width: (768px)) {
       max-width: 140px;
       min-height: 143px;
       padding-top: 50px;
     }
+
+    @media (max-width: (760px)) {
+      max-width: 174px;
+      min-height: 210px;
+      padding-top: 95px;
+    }
+
+    @media (max-width: (440px)) {
+      max-width: 115px;
+      min-height: 128px;
+      padding-top: 39px;
+    }
+
   }
 
   &__text {
@@ -57,9 +116,23 @@
     color: var(--light-color);
     padding: 0px 35px;
 
+    @media (max-width: (1366px)) {
+      font-size: 15px;
+      padding: 0 22px;
+    }
+
     @media (max-width: (768px)) {
       font-size: 12px;
+    }
+
+    @media (max-width: (760px)) {
+      font-size: 15px;
       padding: 0 22px;
+    }
+
+    @media (max-width: (440px)) {
+      font-size: 11px;
+      padding: 0 5px;
     }
   }
 
@@ -76,9 +149,17 @@
     height: 62px;
     @include flex-all-center;
 
-    @media (max-width: (768px)) {
+    @media (max-width: (1366px)) {
       font-size: 16px;
       height: 20px;
+    }
+
+    @media (max-width: (768px)) {
+      font-size: 16px;
+    }
+
+    @media (max-width: (760px)) {
+      font-size: 16px;
     }
   }
 }
@@ -89,15 +170,24 @@
   left: -20px;
   right: 0;
 
-  @media (max-width: (768px)) {
+  @media (max-width: (1366px)) {
+    width: 200px;
     position: absolute;
     top: -131px;
     left: -12px;
     right: 0;
   }
-  @media (max-width: (700px)) {
-    width: 163px;
+
+  @media (max-width: (760px)) {
+    transform: translate(-50%, 0);
+    left: 50%;
   }
+
+  @media (max-width: (440px)) {
+    top: -110px;
+    width: 135px;
+  }
+
 }
 
 .hexagonBen__cover {
@@ -128,9 +218,13 @@
   --hexagonBenStrokeThickness: 5px;
   /* Ширина рамки */
 
-  @media (max-width: (768px)) {
+  @media (max-width: (1366px)) {
     --hexagonBenStrokeThickness: 2px;
     top: -114px;
+  }
+
+  @media (max-width: (440px)) {
+    top: -97px;
   }
 }
 
@@ -140,8 +234,20 @@
   clip-path: var(--uihexagonBenClipPath);
   position: relative;
 
+  @media (max-width: (1366px)) {
+    max-width: 170px;
+  }
+
   @media (max-width: (768px)) {
     max-width: 136px;
+  }
+
+  @media (max-width: (760px)) {
+    max-width: 170px;
+  }
+
+  @media (max-width: (440px)) {
+    max-width: 111px;
   }
 }
 

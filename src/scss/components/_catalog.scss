@@ -4,16 +4,29 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 
-    @media (max-width: (768px)) {
+    @media (max-width: (1275px)) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (max-width: (990px)) {
       grid-template-columns: repeat(4, 1fr);
     }
+
+    @media (max-width: (600px)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: (450px)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
   }
 
   &__item {
     margin-bottom: 70px;
     grid-gap: 30px;
 
-    @media (max-width: (768px)) {
+    @media (max-width: (990px)) {
       margin-right: 10px;
       margin-left: 10px;
       margin-bottom: 50px;
@@ -54,14 +67,24 @@
       }
     }
 
+    @media (max-width: (990px)) {
+      margin-top: 0;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+    }
+
     @media (max-width: (768px)) {
       font-size: 16px;
-      left: 12px;
-      height: 27px;
+      margin: 0;
+      height: 30px;
+    }
+    @media (max-width: (350px)) {
+      font-size: 15px;
     }
   }
 
-  @media (max-width: (768px)) {
+  @media (max-width: (990px)) {
     padding-top: 150px;
   }
 }
@@ -73,8 +96,9 @@
 
 .hexagon__cover {
   position: absolute;
-  left: 15px;
+  left: 20px;
   top: -40px;
+
 
   --uihexagonClipPath: var(--hexagonClipPath);
   box-sizing: var(--hexagonBoxSizing, border-box);
@@ -87,9 +111,14 @@
   --hexagonStrokeThickness: 5px;
 
   /* Ширина рамки */
-  @media (max-width: (768px)) {
-    left: 22px;
+  @media (max-width: (990px)) {
+    left: 50%;
+    transform: translate(-50%, 0%);
     top: -30px;
+  }
+  /* Ширина рамки */
+  @media (max-width: (768px)) {
+    --hexagonStrokeThickness: 2px;
   }
 
 }
@@ -105,23 +134,45 @@
   /* Цвет рамки */
   --hexagonStrokeThickness: 5px;
   /* Ширина рамки */
-
+  @media (max-width: (768px)) {
+    --hexagonStrokeThickness: 2px;
+  }
 
 }
 
 .hexagon-img {
-  max-width: 140px;
+  max-width: 130px;
   display: block;
   clip-path: var(--uihexagonClipPath);
   position: relative;
 
-  @media (max-width: (768px)) {
-    width: 100px;
+  @media (max-width: (990px)) {
+    max-width: 100px;
+  }
+
+  @media (max-width: (700px)) {
+    max-width: 80px;
+  }
+
+  @media (max-width: (450px)) {
+    max-width: 100px;
+  }
+
+  @media (max-width: (380px)) {
+    max-width: 85px;
+  }
+
+  @media (max-width: (350px)) {
+    max-width: 70px;
   }
 }
 
 .hexagon-primary-img {
   width: 190px;
+
+  @media (max-width: (990px)) {
+    width: 100%;
+  }
 }
 
 
@@ -144,7 +195,7 @@
   display: flex;
   justify-content: center;
 
-  @media (max-width: (768px)) {
+  @media (max-width: (990px)) {
     margin-top: -20px;
   }
 }

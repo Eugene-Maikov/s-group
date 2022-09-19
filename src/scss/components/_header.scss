@@ -21,11 +21,12 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0;
   }
 
   &__logo {
-    @media (max-width: (768px)) {
+    @media (max-width: (1160px)) {
       width: 115px;
       height: 40px;
     }
@@ -65,7 +66,7 @@
     .header__icon {
       @include mr(40px);
 
-      @media (max-width: (768px)) {
+      @media (max-width: (1160px)) {
         width: 20px;
         height: 20px;
         @include mr(20px);
@@ -73,7 +74,7 @@
     }
 
     .burger {
-      @media (max-width: (768px)) {
+      @media (max-width: (1160px)) {
         display: flex;
         align-items: center;
         width: 30px;
@@ -100,6 +101,10 @@
     letter-spacing: 0.02em;
     color: var(--light-color);
     position: relative;
+
+     @media (max-width: (1160px)) {
+       font-size: 16px;
+     }
 
     &--arrow {
       &::after {

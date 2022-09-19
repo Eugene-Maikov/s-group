@@ -1,0 +1,6 @@
+.burger {
+  @include burger
+}
+.menu--active{
+  display: flex;
+}

@@ -4,8 +4,6 @@
 @import "fonts";
 @import "settings";
 
-@import "./components/transition-line.scss";
-
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/intro";
@@ -17,3 +15,6 @@
 @import "./components/questions";
 @import "./components/contacts";
 @import "./components/footer";
+
+@import "./components/transition-line";
+@import "./components/burger";

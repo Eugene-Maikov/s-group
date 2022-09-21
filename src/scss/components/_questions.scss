@@ -232,3 +232,7 @@
 .custom-checkbox:disabled+label::before {
   background-color: #e9ecef;
 }
+
+.form__input.error {
+  border-color: red;
+}

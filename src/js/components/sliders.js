@@ -1,18 +1,47 @@
 // Подключение свайпера
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
-const swiperNews = new Swiper(".news__slider", {
+const swiperNews1 = new Swiper(".news__slider-1", {
   slidesPerView: 3,
   spaceBetween: 30,
 
   navigation: {
-    nextEl: ".news__btn-next",
-    prevEl: ".news__btn-prev",
+    nextEl: ".news__btn-next-1",
+    prevEl: ".news__btn-prev-1",
   },
   clickable: true,
 
   pagination: {
-    el: '.news-pagination',
+    el: '.news-pagination-1',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    770: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+const swiperNews2 = new Swiper(".news__slider-2", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: ".news__btn-next-2",
+    prevEl: ".news__btn-prev-2",
+  },
+  clickable: true,
+
+  pagination: {
+    el: '.news-pagination-2',
   },
 
   breakpoints: {

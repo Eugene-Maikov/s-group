@@ -2118,7 +2118,7 @@ a {
 }
 
 .contacts {
-  background-image: url("../img/map-img.jpg");
+  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2374,13 +2374,30 @@ a {
   opacity: 1;
 }
 
+#map-tablet,
 #map {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
+#map-tablet {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #map {
+    display: none;
+  }
+  #map-tablet {
+    display: block;
+  }
+}
 .footer__top {
   padding-top: 92px;
   padding-bottom: 22px;
